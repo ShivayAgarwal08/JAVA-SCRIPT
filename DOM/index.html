@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <!-- ================= Header ================= -->
+        <header>
+            <h1>Smart Task Manager</h1>
+            <p>Manage your daily tasks efficiently.</p>
+        </header>
+
+        <!-- ================= Add Task ================= -->
+        <section class="add-task">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your task..."
+            >
+
+            <button id="addTaskBtn">
+                Add Task
+            </button>
+
+        </section>
+
+        <!-- ================= Search ================= -->
+        <section class="search">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search tasks..."
+            >
+
+            <button id="searchBtn">
+                Search Task
+            </button>
+
+        </section>
+
+        <!-- ================= Filters ================= -->
+        <section class="filters">
+
+            <button class="filter-btn active" id="allBtn">
+                All (<span id="allCount">0</span>)
+            </button>
+
+            <button class="filter-btn" id="pendingBtn">
+                Pending (<span id="pendingCount">0</span>)
+            </button>
+
+            <button class="filter-btn" id="completedBtn">
+                Completed (<span id="completedCount">0</span>)
+            </button>
+
+        </section>
+
+        <!-- ================= Task List ================= -->
+        <section class="task-section">
+
+            <ul id="taskList">
+
+                <!--
+                Tasks will be added here dynamically
+
+                Example structure:
+
+                <li class="task">
+
+                    <div class="task-left">
+
+                        <input type="checkbox">
+
+                        <span class="task-text">
+                            Learn DOM
+                        </span>
+
+                    </div>
+
+                    <div class="task-actions">
+
+                        <button class="edit-btn">
+                            Edit
+                        </button>
+
+                        <button class="delete-btn">
+                            Delete
+                        </button>
+
+                    </div>
+
+                </li>
+
+                -->
+
+            </ul>
+
+        </section>
+
+        <!-- ================= Footer ================= -->
+        <footer>
+
+            <button id="clearCompletedBtn">
+                Clear Completed
+            </button>
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
